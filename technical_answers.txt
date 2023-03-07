@@ -1,3 +1,2 @@
 1. What is data engineering?
-Data engineering is the practice of developing systems to move and transform data from one 
-place and shape to another following the bussiness needs.
+Data engineering is the practice of developing systems with the purpose of moving and transforming data from one place and shape to another following the business needs.
