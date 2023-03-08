@@ -16,4 +16,4 @@ It is a basic workflow for data engineers. This workflow or routine consists in 
 9. What a re the non-technical soft skills that are most valuable for data engineers?
 10. Suppose you have to design an Anomaly Detection Solution for a client in real or near real time.
 Which technologies do you apply for real time ingestion and stream for an anomaly detection system? 
-
+11. Explain the differences between OLAP and OLTP Systems.
