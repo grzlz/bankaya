@@ -1,2 +1,12 @@
 1. What is data engineering?
-Data engineering is the practice of developing systems with the purpose of moving and transforming data from one place and shape to another following the business needs.
+Data engineering is the practice of developing systems with the purpose of moving and transforming data from one place and shape to another following any given business needs.
+
+2. What are the main responsabilities of a Data Engineer?
+The main responsabilities of a data engineer are building and maintaining data pipelines to ensure that the data keeps flowing to satisfy business demands.  
+
+3. Explain ETL.
+ETL stands for Extract, Transform and Load.
+It is a basic workflow for data engineers. This workflow or routine consists in extracting data from a source, transform it accordingly to predefined business rules and loading it into a landing zone where it will be queried for further analysis.  
+
+4. How you build a Data Pipeline?
+5. In RDBMS, the Join command is your friend. Explain why.
