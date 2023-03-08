@@ -10,3 +10,10 @@ It is a basic workflow for data engineers. This workflow or routine consists in 
 
 4. How you build a Data Pipeline?
 5. In RDBMS, the Join command is your friend. Explain why.
+6. What are the main features of a production pipeline?
+7. How do you monitor a data pipeline? 
+8. Give us a situation where you decide to use a NoSQL database instead of a RDB and explain why.
+9. What a re the non-technical soft skills that are most valuable for data engineers?
+10. Suppose you have to design an Anomaly Detection Solution for a client in real or near real time.
+Which technologies do you apply for real time ingestion and stream for an anomaly detection system? 
+
