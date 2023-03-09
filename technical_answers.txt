@@ -6,14 +6,33 @@ The main responsabilities of a data engineer are building and maintaining data p
 
 3. Explain ETL.
 ETL stands for Extract, Transform and Load.
-It is a basic workflow for data engineers. This workflow or routine consists in extracting data from a source, transform it accordingly to predefined business rules and loading it into a landing zone where it will be queried for further analysis.  
+It is a basic workflow for data engineers. This workflow or routine consists in extracting data from a source, transform it accordingly to predefined business rules and loading it into a landing zone where it will be queried by a final user.  
 
 4. How you build a Data Pipeline?
+To build a data pipeline you need to create a system than extracts data from a source and loads it into another.
+
 5. In RDBMS, the Join command is your friend. Explain why.
+One of the main benefits of Relational Databases is that it allows to reduce data redundancy by normalizing the data. 
+Normalizing is a process This means that instead of writing several times the same piece of information, you extract once this information into another table and keep .
+Since the data is spread in tables, to get all the information for a record one would have to join this mentioned tables. 
+That's why in RDBMS the join command is your friend: data is spread in different tables and to get a full record you need the join command. 
+
 6. What are the main features of a production pipeline?
+
+
 7. How do you monitor a data pipeline? 
+
+
 8. Give us a situation where you decide to use a NoSQL database instead of a RDB and explain why.
+
+
 9. What a re the non-technical soft skills that are most valuable for data engineers?
+I think that the most valuable non-technical soft skill for a data engineer to have is business feeling. 
+Another valuable soft skill is openness 
+
+
 10. Suppose you have to design an Anomaly Detection Solution for a client in real or near real time.
-Which technologies do you apply for real time ingestion and stream for an anomaly detection system? 
+Which technologies do you apply for real time ingestion and stream for an anomaly detection system? Diagram the solution in AWS or GCP Infrastructure.
+
+
 11. Explain the differences between OLAP and OLTP Systems.
