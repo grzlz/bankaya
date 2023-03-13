@@ -32,7 +32,8 @@ One situation in which I would decide to use a NoSQL database instead of a RDB w
 
 9. What a re the non-technical soft skills that are most valuable for data engineers?
 I think that the most valuable non-technical soft skill for a data engineer to have is business feeling. 
-Another valuable soft skill is openness 
+If the engineer has clarity on what's the business trying to achieve, he would anticipate business needs and reduce the communication bridge. 
+Another valuable soft skill is open communication, willingless to admit his own ignorance, problem solving skills and a good time management.
 
 
 10. Suppose you have to design an Anomaly Detection Solution for a client in real or near real time.
