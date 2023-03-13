@@ -20,10 +20,14 @@ That's why in RDBMS the join command is your friend: data is spread in different
 6. What are the main features of a production pipeline?
 
 
-7. How do you monitor a data pipeline? 
 
+7. How do you monitor a data pipeline? 
+In my experience there are two ways of monitoring a data pipeline. 
+The first one is having a dedicated team overlooking every time the pipeline runs.
+The second one is having an alerting system integrated to the pipeline that sends messges to the relevant developers if something goes wrong.
 
 8. Give us a situation where you decide to use a NoSQL database instead of a RDB and explain why.
+One situation in which I would decide to use a NoSQL database instead of a RDB would be if I had to handle large volumes of unstructured data and if I haven't recieved clarity on how are we going to use this information. Instead of designing a RDB to store this information, I would simply load the information into a NoSQL database. 
 
 
 9. What a re the non-technical soft skills that are most valuable for data engineers?
