@@ -12,10 +12,10 @@ It is a basic workflow for data engineers. This workflow or routine consists in 
 To build a data pipeline you need to create a system than extracts data from a source and loads it into another.
 
 5. In RDBMS, the Join command is your friend. Explain why.
-One of the main benefits of Relational Databases is that it allows to reduce data redundancy by normalizing the data. 
-Normalizing is a process This means that instead of writing several times the same piece of information, you extract once this information into another table and keep .
+One of the main benefits of Relational Databases is that it allows you to reduce data redundancy by normalizing the data. 
+Data normalization is the process of organizing data so that it is structured efficiently. For example, instead of writing several times the same piece of information, you can extract once this information and load into another table and by keeping track of the relationship between the records, you can retrieve the complete information.
 Since the data is spread in tables, to get all the information for a record one would have to join this mentioned tables. 
-That's why in RDBMS the join command is your friend: data is spread in different tables and to get a full record you need the join command. 
+That's why in RDBMS the join command is your friend: data is spread in different tables to maximize efficiency and to get a full record you need the join command. 
 
 6. What are the main features of a production pipeline?
 
