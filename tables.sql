@@ -1,4 +1,4 @@
-CREATE TABLE customer_tbl (
+CREATE TABLE IF NOT EXISTS customer_tbl (
     customer_id SERIAL PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
@@ -8,13 +8,13 @@ CREATE TABLE customer_tbl (
     address VARCHAR NOT NULL
     );
 
-CREATE TABLE item_tbl (
+CREATE TABLE IF NOT EXISTS item_tbl (
     item_id SERIAL PRIMARY KEY,
     item_name VARCHAR(30) NOT NULL,
     item_price NUMERIC(7, 2) NOT NULL
     );
 
-CREATE TABLE item_purchase_tbl (
+CREATE TABLE IF NOT EXISTS item_purchase_tbl (
     order_id SERIAL PRIMARY KEY,
     purchase_date DATE NOT NULL,
     purchase_price NUMERIC(7, 2) NOT NULL,
