@@ -32,7 +32,7 @@ for collection_name in collection_names:
     collection_data = db[collection_name].find({})
     df = pd.DataFrame(collection_data)
     df = df.astype(str)
-    key = f"mongo_data_{collection_name}_{datetime.now().strftime('%Y-%m-%d')}.parquet"
+    key = f"mongo/{collection_name}_{datetime.now().strftime('%Y-%m-%d')}.parquet"
     s3.put_object(Body=df.to_parquet(), Bucket=bucket_name, Key=key)
     print(f"Succesfully loaded file {collection_name}")
 
@@ -94,6 +94,20 @@ for parquet_file in parquet_files:
     table_name = parts[-1].split('.')[0].split('_')[0:-1]
     table_name = '_'.join(table_name)
     print(df)
+    df.to_sql(name=table_name, con=engine, if_exists='append', index=False)
+    print(f"Succesfully loaded data into {table_name}")
+
+# Extract mongo data form S3 and load o data warehouse
+folder_path = 'mongo/'
+parquet_files = [obj.key for obj in bucket.objects.filter(Prefix=folder_path) if obj.key.endswith('.parquet')]
+
+
+for parquet_file in parquet_files:
+    file = bucket.Object(parquet_file).get()
+    df = pd.read_parquet(BytesIO(file['Body'].read()))
+    parts = parquet_file.split('/')
+    table_name = parts[-1].split('.')[0].split('_')[0:-1]
+    table_name = '_'.join(table_name)
     df.to_sql(name=table_name, con=engine, if_exists='append', index=False)
     print(f"Succesfully loaded data into {table_name}")
 
